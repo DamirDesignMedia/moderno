@@ -1,9 +1,83 @@
 @import "vars";
 @import "libs";
+@import "global";
 @import "fonts";
-
-
-
-
-
 @import "media";
+
+
+.header__top-inner{
+   height: 90px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.header__text{
+   margin-left: auto;
+   margin-right: 25px;
+   color: $text;
+}
+.header__text span{
+   color: $red;
+   
+}
+.header__phone{
+   color: $text;
+   text-decoration: none;
+}
+.header__btn{
+   padding: 4px;
+   width: 72px;
+   color: $white;
+   text-align: center;
+   font-size: 12px;
+   border-radius: 4px;
+}
+.header__btn-login{
+   background-color: $green;
+}
+.header__btn-registr{
+   margin-left: 7px;
+   background-color: $red;
+}
+.header__menu{
+   background-color: $bg;
+}
+.menu{
+   height: 60px;
+   display: flex;
+   align-items: center;
+}
+.menu__list{
+   li{
+      display: inline-block;
+      & + li{
+         margin-left: 30px;
+      }
+   }
+   a{
+      color: #fff;
+      font-size: 14px;
+   }
+}
+.mainbanner{
+   padding: 170px 0px;
+   background-image: url('../img/banner_bg.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+.banner__content{
+   text-align: center;
+}
+.titlebanner{
+   color: #fff;
+   font-size: 48px;
+   line-height: 30px;
+   font-weight: 700;
+}
+.subtitle{
+   color: #fff;
+   font-size: 20px;
+   line-height: 30px;
+   font-weight: 500;
+}
